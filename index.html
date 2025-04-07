@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peddy - Pet Adoption Platform</title>
+    <!-- Tailwind & DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Aweso   me -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation based on Navbar.png design -->
+    <nav class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <span class="text-teal-600 text-2xl font-bold">
+                    <i class="fa-solid fa-paw mr-2"></i> Peddy
+                </span>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-gray-700 hover:text-teal-600">Home</a>
+                <a href="#" class="text-gray-700 hover:text-teal-600">Shop</a>
+                <a href="#" class="text-gray-700 hover:text-teal-600">Contact</a>
+                <button class="btn btn-circle btn-ghost">
+                    <i class="fa-regular fa-user text-lg"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 hover:text-teal-600">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="container mx-auto px-4 py-3 space-y-3">
+                <a href="#" class="block text-gray-700 hover:text-teal-600">Home</a>
+                <a href="#" class="block text-gray-700 hover:text-teal-600">Shop</a>
+                <a href="#" class="block text-gray-700 hover:text-teal-600">Contact</a>
+                <a href="#" class="block text-gray-700 hover:text-teal-600">Profile</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section based on Banner Section.png -->
+    <section class="relative bg-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-2 text-gray-500 text-sm">Bringing Families Together</div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Your Path to Adoption<br>Starts Here</h1>
+            <p class="max-w-2xl mx-auto text-gray-600 mb-8">
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking 
+                at its layout. The point of using Lorem Ipsum is that it has a.
+            </p>
+            <button id="view-more-btn" class="btn bg-teal-600 hover:bg-teal-700 text-white border-none">
+                View More
+            </button>
+            
+            <div class="mt-12">
+                <img src="images/pet.webp" alt="Dog and cat together" class="max-w-xl mx-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Main content container -->
+    <main class="bg-white py-16 container mx-auto p-4" id="pet-container">
+        <!-- We'll add the "Adopt Your Best Friend" section here later -->
+        <section id="adopt-section" class="py-16">
+            <!-- This section will be populated in the next step -->
+        </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- About Column -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <span class="text-teal-600 text-2xl font-bold">
+                            <i class="fa-solid fa-paw mr-2"></i> Peddy
+                        </span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Location: Barishal
+
+                    </p>
+                    <p class="text-gray-400 mb-4">Phone: +880 1926926166</p>
+                    <p class="text-gray-400 mb-4">Email: zasimmallickofficial@gmail.com</p>
+                    <p class="text-gray-400">Openings hours: 9.00 AM - 5.00 PM</p>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="flex space-x-4 mt-6">
+                        <a href="https://www.facebook.com/zasimmallik.Z/" class="text-white hover:text-teal-600 transition-colors">
+                            <i class="fab fa-facebook-f text-2xl"></i>
+                        </a>
+                        <a href="https://x.com/zasimmallik" class="text-white hover:text-teal-600 transition-colors">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-teal-600 transition-colors">
+                            <i class="fab fa-youtube text-2xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/zasimmallik/" class="text-white hover:text-teal-600 transition-colors">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links Column -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6">Useful Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-teal-500 transition-colors">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-teal-500 transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-teal-500 transition-colors">Animals</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-teal-500 transition-colors">Foundation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-teal-500 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter Column -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6">Drop a Message</h3>
+                    <div class="space-y-4">
+                        <input type="email" placeholder="Enter your email" class="w-full p-3 bg-gray-800 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500">
+                        <button class="w-full bg-teal-600 hover:bg-teal-700 text-white py-3 px-4 rounded-md transition-colors">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
