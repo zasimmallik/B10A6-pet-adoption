@@ -296,7 +296,7 @@ function sortPetsByPrice(pets) {
     return [...pets].sort((a, b) => {
         const priceA = a.price ? parseFloat(a.price.replace('$', '')) : 0;
         const priceB = b.price ? parseFloat(b.price.replace('$', '')) : 0;
-        return priceA - priceB;
+        return priceB - priceA;
     });
 }
 
